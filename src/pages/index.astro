@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css'
 import { Icon } from 'astro-icon/components'
+import SEO from '../components/SEO.astro'
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -11,7 +13,7 @@ import { Icon } from 'astro-icon/components'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>mustaeen ahmed</title>
+		<SEO title={title} description={description} />
 	</head>
 	<body class="bg-[#09090B] text-white">
 		<div class="max-w-2xl mx-auto pt-8 sm:pt-15 p-10 flex flex-col">

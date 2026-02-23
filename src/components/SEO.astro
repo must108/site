@@ -1,0 +1,44 @@
+---
+import { site } from "../seo";
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  noindex?: boolean;
+}
+const {
+  title = site.defaultTitle,
+  description = site.defaultDescription,
+  image = site.ogImage,
+  noindex = false,
+} = Astro.props;
+const pageUrl = new URL(Astro.url.pathname, site.url).toString();
+const fullTitle =
+  title === site.defaultTitle ? title : `${title} | ${site.name}`;
+const imageUrl = new URL(image, site.url).toString();
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Mustaeen Ahmed",
+  url: site.url,
+  jobTitle: "Software Engineer",
+};
+---
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<meta name="keywords" content={site.keywords.join(", ")} />
+<link rel="canonical" href={pageUrl} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={pageUrl} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageUrl} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+{noindex && <meta name="robots" content="noindex,nofollow" />}
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(personJsonLd)}
+/>
