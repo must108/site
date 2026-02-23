@@ -1,5 +1,71 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import '../styles/global.css'
+import { Icon } from 'astro-icon/components'
 ---
 
-<Layout />
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>mustaeen ahmed</title>
+	</head>
+	<body class="bg-[#09090B] text-white">
+		<div class="max-w-2xl mx-auto pt-8 sm:pt-15 p-10 flex flex-col">
+			<p class="text-2xl pb-2">
+				mustaeen ahmed
+			</p>
+			<div class="text-sm text-gray-300 flex flex-row gap-4 pb-5">
+				<a href="/resume.pdf" target="_blank" class="hover:text-gray-100">
+					<Icon name="logos/resume" size={20} />
+				</a>
+				<a href="https://github.com/must108" target="_blank" class="hover:text-gray-100">
+					<Icon name="logos/github_dark" size={20} />
+				</a>
+				<a href="https://www.linkedin.com/	in/mustaeenahmed/" target="_blank" class="hover:text-gray-100">
+					<Icon name="logos/linkedin" size={20} />
+				</a>
+			</div>
+			<p class="text-sm sm:text-base">
+				<b>about</b>
+			</p>
+			<ul class="text-xs sm:text-sm pl-5 pb-5 list-disc">
+				<li>computer science student at the <a class="hover:underline" href="https://www.ucf.edu/" target="_blank"><b>university of central florida</b></a></li>
+				<li>experienced in infra, cloud, full-stack, ai/ml</li>
+			</ul>
+			<p class="text-sm sm:text-base text-bold">
+				<b>notable experiences</b>
+			</p>
+			<ul class="text-xs sm:text-sm pl-5 pb-5 list-disc">
+				<li><a class="hover:underline" href="https://www.cloudflare.com/" target="_blank"><b>cloudflare</b></a> — improving cloudflare containers</li>
+				<li><a class="hover:underline" href="https://joinhandshake.com/" target="_blank"><b>handshake</b></a> — used variational autoencoders to experiment with generating training data</li>
+				<li><a class="hover:underline" href="https://www.ornl.gov/" target="_blank"><b>oak ridge national laboratory</b></a> — developed an observability tool for quantum experiments</li>
+				<li><a class="hover:underline" href="https://www.morganstanley.com/" target="_blank"><b>morgan stanley</b></a> — developed tools that assisted quants working with residental securities</li>
+				<li><a class="hover:underline" href="https://ideaflow.app/" target="_blank"><b>ideaflow, inc.</b></a> — iterated on an ai-powered note-taking tool. backed by 8vc, first round</li>
+				<li><a class="hover:underline" href="https://www.transportation.gov/" target="_blank"><b>u.s. department of transportation</b></a> — built tools to optimize sea transportation</li>
+				<li><a class="hover:underline" href="https://www.cae.com/" target="_blank"><b>cae</b></a> — developed devsecops pipelines for the air force's scars program</li>
+				<li><a class="hover:underline" href="https://www.nsf.gov/" target="_blank"><b>national science foundation</b></a> — researched reinforcement learning for robotics tasks</li>
+				<li><a class="hover:underline" href="https://www.leidos.com/" target="_blank"><b>leidos</b></a> — researched solutions for custom llm decision making</li>
+				<li><a class="hover:underline" href="https://www.darden.com/" target="_blank"><b>darden</b></a> — developed workflow automations for business processes</li>
+			</ul>
+			<p class="text-sm sm:text-base" >
+				<b>notable projects</b>
+			</p>
+			<ul class="text-xs sm:text-sm pl-5 pb-5 list-disc">
+				<li><a class="hover:underline" href="https://github.com/KnightHacks/forge" target="_blank"><b>forge</b></a> — open-source monorepository of the largest software engineering club at UCF</li>
+				<li><a class="hover:underline" href="https://devpost.com/software/guitar-o3gw19" target="_blank"><b>guitAR</b></a>— 2nd place winner of knight hacks vii</li>
+				<li><a class="hover:underline" href="https://devpost.com/software/agentnow" target="_blank"><b>agentnow</b></a> — 2nd place winner of the servicenow challenge at knight hacks viii</li>
+				<li><a class="hover:underline" href="https://pypi.org/project/musicnotes/" target="_blank"><b>musicnotes</b></a> — open-source python package for playing music</li>
+			</ul>
+			<p class="text-sm sm:text-base">
+				<b>contact</b>
+			</p>
+			<ul class="text-xs sm:text-sm pl-5 pb-5 list-disc">
+				<li>my contact information can be found on my resume, linked below my name</li>
+			</ul>
+		</div>
+	</body>
+</html>
