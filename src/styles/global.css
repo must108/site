@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Test Tiempos Headline";
+  src: url("fonts/TestTiemposHeadline-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    font-family: "Test Tiempos Headline", sans-serif;
+}
+
+.difffont {
+    font-family: system-ui, sans-serif;
+}
