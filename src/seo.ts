@@ -4,6 +4,13 @@ export const site = {
   defaultTitle: "mustaeen ahmed",
   defaultDescription:
     "Mustaeen Ahmed is a software engineer and a student at the University of Central Florida.",
+  locale: "en_US",
+  twitterSite: "@wustdev",
+  twitterCreator: "@wustdev",
+  sameAs: [
+    "https://github.com/must108",
+    "https://www.linkedin.com/in/mustaeenahmed/",
+  ],
   keywords: [
     "Software Developer",
     "Developer",
