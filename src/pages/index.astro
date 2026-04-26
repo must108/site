@@ -1,78 +1,133 @@
 ---
-import '../styles/global.css'
-import { Icon } from 'astro-icon/components'
-import SEO from '../components/SEO.astro'
+import "../styles/global.css";
+import { Icon } from "astro-icon/components";
+import SEO from "../components/SEO.astro";
 const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" href="/apple-icon.jpg" />
-		<meta name="theme-color" content="#09090B" />
-		<meta name="generator" content={Astro.generator} />
-		<SEO title={title} description={description} />
-	</head>
-	<body class="bg-[#09090B] text-white">
-		<div class="max-w-2xl mx-auto pt-5 sm:pt-15 p-10 flex flex-col">
-			<p class="text-2xl pb-2">
-				mustaeen ahmed
-			</p>
-			<div class="text-sm text-gray-300 flex flex-row gap-4 pb-5">
-				<a href="/resume.pdf" target="_blank" class="hover:text-gray-100">
-					<Icon name="logos/resume" size={20} />
-				</a>
-				<a href="https://github.com/must108" target="_blank" class="hover:text-gray-100">
-					<Icon name="logos/github_dark" size={20} />
-				</a>
-				<a href="https://www.linkedin.com/	in/mustaeenahmed/" target="_blank" class="hover:text-gray-100">
-					<Icon name="logos/linkedin" size={20} />
-				</a>
-			</div>
-			<p class="text-sm sm:text-base">
-				<b>about</b>
-			</p>
-			<ul class="text-xs sm:text-sm pl-5 pb-5 list-disc">
-				<li>computer science student at the <a class="hover:underline" href="https://www.ucf.edu/" target="_blank"><b>university of central florida</b></a></li>
-				<li>experienced in infra, cloud, full-stack, ai/ml</li>
-			</ul>
-			<p class="text-sm sm:text-base text-bold">
-				<b>notable experiences</b>
-			</p>
-			<ul class="text-xs sm:text-sm pl-5 pb-5 list-disc">
-				<li><a class="hover:underline" href="https://www.cloudflare.com/" target="_blank"><b>cloudflare</b></a> — improving <a class="hover:underline" href="https://workers.cloudflare.com/product/containers/" target="_blank">
-					<b>cloudflare containers</b>
-					</a>
-				</li>
-				<li><a class="hover:underline" href="https://joinhandshake.com/" target="_blank"><b>handshake</b></a> — used variational autoencoders to experiment with generating training data</li>
-				<li><a class="hover:underline" href="https://www.ornl.gov/" target="_blank"><b>oak ridge national laboratory</b></a> — developed an observability tool for quantum experiments</li>
-				<li><a class="hover:underline" href="https://www.morganstanley.com/" target="_blank"><b>morgan stanley</b></a> — developed tools that assisted quants working with residental securities</li>
-				<li><a class="hover:underline" href="https://ideaflow.app/" target="_blank"><b>ideaflow, inc.</b></a> — iterated on an ai-powered note-taking tool. backed by 8vc, first round</li>
-				<li><a class="hover:underline" href="https://www.transportation.gov/" target="_blank"><b>u.s. department of transportation</b></a> — built tools to optimize sea transportation</li>
-				<li><a class="hover:underline" href="https://www.cae.com/" target="_blank"><b>cae</b></a> — developed devsecops pipelines for the air force's scars program</li>
-				<li><a class="hover:underline" href="https://www.nsf.gov/" target="_blank"><b>national science foundation</b></a> — researched reinforcement learning for robotics tasks</li>
-				<li><a class="hover:underline" href="https://www.leidos.com/" target="_blank"><b>leidos</b></a> — researched solutions for custom llm decision making</li>
-				<li><a class="hover:underline" href="https://www.darden.com/" target="_blank"><b>darden</b></a> — developed workflow automations for business processes</li>
-			</ul>
-			<p class="text-sm sm:text-base" >
-				<b>notable projects</b>
-			</p>
-			<ul class="text-xs sm:text-sm pl-5 pb-5 list-disc">
-				<li><a class="hover:underline" href="https://github.com/KnightHacks/forge" target="_blank"><b>forge</b></a> — open-source monorepository for the largest software engineering club at UCF</li>
-				<li><a class="hover:underline" href="https://github.com/joinemm/miso-bot" target="_blank"><b>miso bot</b></a> — open-source discord bot used by 6M+ users</li>
-				<li><a class="hover:underline" href="https://devpost.com/software/guitar-o3gw19" target="_blank"><b>guitAR</b></a>— 2nd place winner of knight hacks vii</li>
-				<li><a class="hover:underline" href="https://devpost.com/software/agentnow" target="_blank"><b>agentnow</b></a> — 2nd place winner of the servicenow challenge at knight hacks viii</li>
-				<li><a class="hover:underline" href="https://pypi.org/project/musicnotes/" target="_blank"><b>musicnotes</b></a> — open-source python package for playing music</li>
-			</ul>
-			<p class="text-sm sm:text-base">
-				<b>contact</b>
-			</p>
-			<ul class="text-xs sm:text-sm pl-5 pb-5 list-disc">
-				<li>my contact information can be found on my resume, linked below my name</li>
-			</ul>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-icon.jpg" />
+    <meta name="theme-color" content="#09090B" />
+    <meta name="generator" content={Astro.generator} />
+    <SEO title={title} description={description} />
+  </head>
+  <body
+    class="bg-[#1E3A5F] text-[#EAF4FF] min-h-screen flex items-center justify-center"
+  >
+    <div class="max-w-2xl mx-auto pt-5 sm:pt-15 p-10 flex flex-col">
+      <p class="text-3xl pb-2">mustaeen ahmed</p>
+      <div>
+        <p class="text-md">current</p>
+        <ul class="text-sm sm:text-md pl-5 pb-5 list-disc">
+          <li>working at ?</li>
+          <li class="inline-flex items-center gap-1">
+            studying at
+            <a href="https://www.ucf.edu/" target="_blank" aria-label="UCF">
+              <Icon name="logos/ucf" size={30} class="inline-block" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="text-md">previous</p>
+      <ul class="text-sm sm:text-md pl-5 pb-5 list-disc">
+        <li class="flex flex-row gap-2">
+          <a
+            href="https://www.cloudflare.com/"
+            target="_blank"
+            aria-label="Cloudflare"
+          >
+            <Icon name="logos/cloudflare" size={30} class="inline-block" />
+          </a>
+          <a
+            href="https://joinhandshake.com/"
+            target="_blank"
+            aria-label="Handshake"
+          >
+            <Icon name="logos/handshake" size={25} class="inline-block" />
+          </a>
+          <a
+            href="https://www.morganstanley.com/"
+            target="_blank"
+            aria-label="Morgan Stanley"
+          >
+            <Icon name="logos/morganstanley" size={25} class="inline-block" />
+          </a>
+          <a href="https://www.leidos.com/" target="_blank" aria-label="Leidos">
+            <Icon name="logos/leidos" size={30} class="inline-block" />
+          </a>
+          <a href="https://www.cae.com/" target="_blank" aria-label="CAE">
+            <Icon name="logos/cae" size={30} class="inline-block" />
+          </a>
+          <a
+            href="https://8vc.com/"
+            target="_blank"
+            aria-label="Ideaflow (8VC)"
+          >
+            <Icon name="logos/8vc" size={25} class="inline-block" />
+          </a>
+          <a href="https://www.darden.com/" target="_blank" aria-label="Darden">
+            <Icon name="logos/darden" size={25} class="inline-block" />
+          </a>
+        </li>
+        <li>... among others!</li>
+      </ul>
+      <div>
+        <div class="text-sm text-[#EAF4FF] flex flex-row gap-4 pb-5">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            class="hover:text-[#A7DBFF] inline-flex items-center justify-center"
+          >
+            <Icon
+              name="logos/resume"
+              size={20}
+              class="block"
+              aria-label="Resume"
+            />
+          </a>
+          <a
+            href="https://github.com/must108"
+            target="_blank"
+            class="hover:text-[#A7DBFF] inline-flex items-center justify-center"
+          >
+            <Icon
+              name="logos/github_dark"
+              size={20}
+              class="block"
+              aria-label="GitHub"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mustaeenahmed/"
+            target="_blank"
+            class="hover:text-[#A7DBFF] inline-flex items-center justify-center"
+          >
+            <Icon
+              name="logos/linkedin"
+              size={20}
+              class="block"
+              aria-label="LinkedIn"
+            />
+          </a>
+          <a
+            href="mailto:contact@mustaeen.dev"
+            target="_blank"
+            class="hover:text-[#A7DBFF] inline-flex items-center justify-center"
+          >
+            <Icon
+              name="logos/mail"
+              size={25}
+              class="block"
+              aria-label="Email"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
