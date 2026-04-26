@@ -24,7 +24,7 @@ const { title, description } = Astro.props;
       <div>
         <p class="text-md font-semibold">current</p>
         <ul class="text-sm sm:text-md pl-5 pb-5 list-disc">
-          <li>working at ?</li>
+          <li>working at <b>?</b></li>
           <li>
             <div class="flex flex-wrap items-center gap-y-1">
               <span class="shrink-0 whitespace-nowrap mr-1"
@@ -61,7 +61,11 @@ const { title, description } = Astro.props;
             <div class="inline-flex items-center gap-1">
               studying at
               <a href="https://www.ucf.edu/" target="_blank" aria-label="UCF">
-                <Icon name="logos/ucf" size={30} class="inline-block" />
+                <Icon
+                  name="logos/ucf"
+                  size={30}
+                  class="inline-block text-black"
+                />
               </a>
             </div>
           </li>
@@ -70,51 +74,62 @@ const { title, description } = Astro.props;
       <p class="text-md font-semibold">previous</p>
       <ul class="text-sm sm:text-md pl-5 pb-5 list-disc">
         <li>
-          <div class="flex flex-row flex-wrap items-center gap-2">
+          <div class="flex flex-row flex-wrap items-center">
             <a
               href="https://www.cloudflare.com/"
               target="_blank"
               aria-label="Cloudflare"
+              class="w-9 h-9 inline-flex items-center justify-center"
             >
-              <Icon name="logos/cloudflare" size={30} class="inline-block" />
+              <Icon name="logos/cloudflare" class="block w-7 h-7" />
             </a>
             <a
               href="https://joinhandshake.com/"
               target="_blank"
               aria-label="Handshake"
+              class="w-9 h-9 inline-flex items-center justify-center"
             >
-              <Icon name="logos/handshake" size={30} class="inline-block" />
+              <Icon name="logos/handshake" class="block w-7 h-7" />
             </a>
             <a
               href="https://www.morganstanley.com/"
               target="_blank"
               aria-label="Morgan Stanley"
+              class="w-9 h-9 inline-flex items-center justify-center"
             >
-              <Icon name="logos/morganstanley" size={30} class="inline-block" />
-            </a>
-            <a
-              href="https://www.leidos.com/"
-              target="_blank"
-              aria-label="Leidos"
-            >
-              <Icon name="logos/leidos" size={30} class="inline-block" />
-            </a>
-            <a href="https://www.cae.com/" target="_blank" aria-label="CAE">
-              <Icon name="logos/cae" size={30} class="inline-block" />
+              <Icon name="logos/morganstanley" class="block w-7 h-7" />
             </a>
             <a
               href="https://8vc.com/"
               target="_blank"
               aria-label="Ideaflow (8VC)"
+              class="w-9 h-9 inline-flex items-center justify-center"
             >
-              <Icon name="logos/8vc" size={30} class="inline-block" />
+              <Icon name="logos/8vc" class="block w-7 h-7" />
+            </a>
+            <a
+              href="https://www.leidos.com/"
+              target="_blank"
+              aria-label="Leidos"
+              class="w-9 h-9 inline-flex items-center justify-center"
+            >
+              <Icon name="logos/leidos" class="block w-7 h-7" />
+            </a>
+            <a
+              href="https://www.cae.com/"
+              target="_blank"
+              aria-label="CAE"
+              class="w-9 h-9 inline-flex items-center justify-center"
+            >
+              <Icon name="logos/cae" class="block w-7 h-7" />
             </a>
             <a
               href="https://www.darden.com/"
               target="_blank"
               aria-label="Darden"
+              class="w-9 h-9 inline-flex items-center justify-center"
             >
-              <Icon name="logos/darden" size={30} class="inline-block" />
+              <Icon name="logos/darden" class="block w-7 h-7" />
             </a>
           </div>
         </li>
