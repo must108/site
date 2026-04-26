@@ -17,16 +17,16 @@ const { title, description } = Astro.props;
     <SEO title={title} description={description} />
   </head>
   <body
-    class="bg-[#1E3A5F] text-[#EAF4FF] min-h-screen flex items-center justify-center"
+    class="bg-[#102A43] text-[#EAF4FF] min-h-screen flex items-center justify-center"
   >
     <div class="max-w-2xl mx-auto pt-5 sm:pt-15 p-10 flex flex-col">
-      <p class="text-3xl sm:text-5xl pb-2">mustaeen ahmed</p>
+      <p class="text-3xl sm:text-6xl pb-2">mustaeen ahmed</p>
       <div>
-        <p class="text-md font-semibold">current</p>
-        <ul class="text-sm sm:text-md pl-5 pb-5 list-disc">
+        <p class="text-md sm:text-lg font-semibold">current</p>
+        <ul class="text-sm sm:text-lg pl-5 pb-5 list-disc">
           <li>working at <b>?</b></li>
           <li>
-            <div class="flex flex-wrap items-center gap-y-1">
+            <div class="flex flex-wrap items-center gap-y-1 sm:gap-x-1">
               <span class="shrink-0 whitespace-nowrap mr-1"
                 >contributing to</span
               >
@@ -36,24 +36,27 @@ const { title, description } = Astro.props;
                 target="_blank"
                 aria-label="Prometheus"
                 class="w-8 h-8 inline-flex items-center justify-center"
+                title="Prometheus"
               >
-                <Icon name="logos/prometheus" class="block w-6 h-6" />
+                <Icon name="logos/prometheus" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
               </a>
               <a
                 href="https://opentelemetry.io/"
                 target="_blank"
                 aria-label="OpenTelemetry"
                 class="w-8 h-8 inline-flex items-center justify-center"
+                title="OpenTelemetry"
               >
-                <Icon name="logos/opentelemetry" class="block w-6 h-6" />
+                <Icon name="logos/opentelemetry" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
               </a>
               <a
                 href="https://clickhouse.com/"
                 target="_blank"
                 aria-label="ClickHouse"
                 class="w-8 h-8 inline-flex items-center justify-center"
+                title="ClickHouse"
               >
-                <Icon name="logos/clickhouse" class="block w-6 h-6" />
+                <Icon name="logos/clickhouse" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
               </a>
             </div>
           </li>
@@ -63,73 +66,80 @@ const { title, description } = Astro.props;
               <a href="https://www.ucf.edu/" target="_blank" aria-label="UCF">
                 <Icon
                   name="logos/ucf"
-                  size={30}
-                  class="inline-block text-black"
+                  class="w-8 h-8 inline-flex items-center justify-center text-black"
+                  title="UCF"
                 />
               </a>
             </div>
           </li>
         </ul>
       </div>
-      <p class="text-md font-semibold">previous</p>
-      <ul class="text-sm sm:text-md pl-5 pb-5 list-disc">
+      <p class="text-md sm:text-lg font-semibold">previous</p>
+      <ul class="text-sm sm:text-lg pl-5 pb-5 list-disc">
         <li>
-          <div class="inline-flex flex-wrap items-center">
+          <div class="inline-flex flex-wrap items-center sm:gap-x-1">
             <a
               href="https://www.cloudflare.com/"
               target="_blank"
               aria-label="Cloudflare"
-              class="w-9 h-9 inline-flex items-center justify-center"
+              class="w-8 h-8 inline-flex items-center justify-center"
+              title="Cloudflare"
             >
-              <Icon name="logos/cloudflare" class="block w-7 h-7" />
+              <Icon name="logos/cloudflare" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
             </a>
             <a
               href="https://joinhandshake.com/"
               target="_blank"
               aria-label="Handshake"
-              class="w-9 h-9 inline-flex items-center justify-center"
+              class="w-8 h-8 inline-flex items-center justify-center"
+              title="Handshake"
             >
-              <Icon name="logos/handshake" class="block w-7 h-7" />
+              <Icon name="logos/handshake" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
             </a>
             <a
               href="https://www.morganstanley.com/"
               target="_blank"
               aria-label="Morgan Stanley"
-              class="w-9 h-9 inline-flex items-center justify-center"
+              class="w-8 h-8 inline-flex items-center justify-center"
+              title="Morgan Stanley"
             >
-              <Icon name="logos/morganstanley" class="block w-7 h-7" />
+              <Icon name="logos/morganstanley" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
             </a>
             <a
               href="https://8vc.com/"
               target="_blank"
               aria-label="Ideaflow (8VC)"
-              class="w-9 h-9 inline-flex items-center justify-center"
+              class="w-8 h-8 inline-flex items-center justify-center"
+              title="8VC"
             >
-              <Icon name="logos/8vc" class="block w-7 h-7" />
+              <Icon name="logos/8vc" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
             </a>
             <a
               href="https://www.leidos.com/"
               target="_blank"
               aria-label="Leidos"
-              class="w-9 h-9 inline-flex items-center justify-center"
+              class="w-8 h-8 inline-flex items-center justify-center"
+              title="Leidos"
             >
-              <Icon name="logos/leidos" class="block w-7 h-7" />
+              <Icon name="logos/leidos" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
             </a>
             <a
               href="https://www.cae.com/"
               target="_blank"
               aria-label="CAE"
-              class="w-9 h-9 inline-flex items-center justify-center"
+              class="w-8 h-8 inline-flex items-center justify-center"
+              title="CAE"
             >
-              <Icon name="logos/cae" class="block w-7 h-7" />
+              <Icon name="logos/cae" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
             </a>
             <a
               href="https://www.darden.com/"
               target="_blank"
               aria-label="Darden"
-              class="w-9 h-9 inline-flex items-center justify-center"
+              class="w-8 h-8 inline-flex items-center justify-center"
+              title="Darden"
             >
-              <Icon name="logos/darden" class="block w-7 h-7" />
+              <Icon name="logos/darden" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
             </a>
           </div>
         </li>
@@ -144,9 +154,9 @@ const { title, description } = Astro.props;
           >
             <Icon
               name="logos/resume"
-              size={20}
-              class="block"
+              class="w-6 h-6 inline-flex items-center justify-center block"
               aria-label="Resume"
+              title="Resume"
             />
           </a>
           <a
@@ -156,9 +166,9 @@ const { title, description } = Astro.props;
           >
             <Icon
               name="logos/github_dark"
-              size={20}
-              class="block"
+              class="w-6 h-6 inline-flex items-center justify-center block"
               aria-label="GitHub"
+              title="GitHub"
             />
           </a>
           <a
@@ -168,9 +178,9 @@ const { title, description } = Astro.props;
           >
             <Icon
               name="logos/linkedin"
-              size={20}
-              class="block"
+              class="w-6 h-6 inline-flex items-center justify-center block"
               aria-label="LinkedIn"
+              title="LinkedIn"
             />
           </a>
           <a
@@ -180,9 +190,9 @@ const { title, description } = Astro.props;
           >
             <Icon
               name="logos/mail"
-              size={25}
-              class="block"
+              class="w-[30px] h-[30px] inline-flex items-center justify-center block"
               aria-label="Email"
+              title="Email"
             />
           </a>
         </div>
