@@ -20,59 +20,108 @@ const { title, description } = Astro.props;
     class="bg-[#1E3A5F] text-[#EAF4FF] min-h-screen flex items-center justify-center"
   >
     <div class="max-w-2xl mx-auto pt-5 sm:pt-15 p-10 flex flex-col">
-      <p class="text-3xl pb-2">mustaeen ahmed</p>
+      <p class="text-3xl sm:text-5xl pb-2">mustaeen ahmed</p>
       <div>
-        <p class="text-md">current</p>
+        <p class="text-md font-semibold">current</p>
         <ul class="text-sm sm:text-md pl-5 pb-5 list-disc">
           <li>working at ?</li>
-          <li class="inline-flex items-center gap-1">
-            studying at
-            <a href="https://www.ucf.edu/" target="_blank" aria-label="UCF">
-              <Icon name="logos/ucf" size={30} class="inline-block" />
-            </a>
+          <li>
+            contributing to
+            <div class="flex flex-row flex-wrap items-center gap-2">
+              <a
+                href="https://prometheus.io/"
+                target="_blank"
+                aria-label="Prometheus"
+              >
+                <Icon name="logos/prometheus" size={25} class="inline-block" />
+              </a>
+              <a
+                href="https://opentelemetry.io/"
+                target="_blank"
+                aria-label="OpenTelemetry"
+              >
+                <Icon
+                  name="logos/opentelemetry"
+                  size={25}
+                  class="inline-block"
+                />
+              </a>
+              <a
+                href="https://clickhouse.com/"
+                target="_blank"
+                aria-label="ClickHouse"
+              >
+                <Icon name="logos/clickhouse" size={25} class="inline-block" />
+              </a>
+              <a
+                href="https://containerd.io/"
+                target="_blank"
+                aria-label="Containerd"
+              >
+                <Icon name="logos/containerd" size={25} class="inline-block" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="inline-flex items-center gap-1">
+              studying at
+              <a href="https://www.ucf.edu/" target="_blank" aria-label="UCF">
+                <Icon name="logos/ucf" size={30} class="inline-block" />
+              </a>
+            </div>
           </li>
         </ul>
       </div>
-      <p class="text-md">previous</p>
+      <p class="text-md font-semibold">previous</p>
       <ul class="text-sm sm:text-md pl-5 pb-5 list-disc">
-        <li class="flex flex-row gap-2">
-          <a
-            href="https://www.cloudflare.com/"
-            target="_blank"
-            aria-label="Cloudflare"
-          >
-            <Icon name="logos/cloudflare" size={30} class="inline-block" />
-          </a>
-          <a
-            href="https://joinhandshake.com/"
-            target="_blank"
-            aria-label="Handshake"
-          >
-            <Icon name="logos/handshake" size={25} class="inline-block" />
-          </a>
-          <a
-            href="https://www.morganstanley.com/"
-            target="_blank"
-            aria-label="Morgan Stanley"
-          >
-            <Icon name="logos/morganstanley" size={25} class="inline-block" />
-          </a>
-          <a href="https://www.leidos.com/" target="_blank" aria-label="Leidos">
-            <Icon name="logos/leidos" size={30} class="inline-block" />
-          </a>
-          <a href="https://www.cae.com/" target="_blank" aria-label="CAE">
-            <Icon name="logos/cae" size={30} class="inline-block" />
-          </a>
-          <a
-            href="https://8vc.com/"
-            target="_blank"
-            aria-label="Ideaflow (8VC)"
-          >
-            <Icon name="logos/8vc" size={25} class="inline-block" />
-          </a>
-          <a href="https://www.darden.com/" target="_blank" aria-label="Darden">
-            <Icon name="logos/darden" size={25} class="inline-block" />
-          </a>
+        <li>
+          <div class="flex flex-row flex-wrap items-center gap-2">
+            <a
+              href="https://www.cloudflare.com/"
+              target="_blank"
+              aria-label="Cloudflare"
+            >
+              <Icon name="logos/cloudflare" size={30} class="inline-block" />
+            </a>
+            <a
+              href="https://joinhandshake.com/"
+              target="_blank"
+              aria-label="Handshake"
+            >
+              <Icon name="logos/handshake" size={30} class="inline-block" />
+            </a>
+            <a
+              href="https://www.morganstanley.com/"
+              target="_blank"
+              aria-label="Morgan Stanley"
+            >
+              <Icon name="logos/morganstanley" size={30} class="inline-block" />
+            </a>
+            <a
+              href="https://www.leidos.com/"
+              target="_blank"
+              aria-label="Leidos"
+            >
+              <Icon name="logos/leidos" size={30} class="inline-block" />
+            </a>
+            <a href="https://www.cae.com/" target="_blank" aria-label="CAE">
+              <Icon name="logos/cae" size={30} class="inline-block" />
+            </a>
+            <a
+              href="https://8vc.com/"
+              target="_blank"
+              aria-label="Ideaflow (8VC)"
+            >
+              <Icon name="logos/8vc" size={30} class="inline-block" />
+            </a>
+            <a
+              href="https://www.darden.com/"
+              target="_blank"
+              aria-label="Darden"
+            >
+              <Icon name="logos/darden" size={30} class="inline-block" />
+            </a>
+          </div>
         </li>
         <li>... among others!</li>
       </ul>
