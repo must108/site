@@ -26,39 +26,34 @@ const { title, description } = Astro.props;
         <ul class="text-sm sm:text-md pl-5 pb-5 list-disc">
           <li>working at ?</li>
           <li>
-            contributing to
-            <div class="flex flex-row flex-wrap items-center gap-2">
+            <div class="flex flex-wrap items-center gap-y-1">
+              <span class="shrink-0 whitespace-nowrap mr-1"
+                >contributing to</span
+              >
+
               <a
                 href="https://prometheus.io/"
                 target="_blank"
                 aria-label="Prometheus"
+                class="w-8 h-8 inline-flex items-center justify-center"
               >
-                <Icon name="logos/prometheus" size={25} class="inline-block" />
+                <Icon name="logos/prometheus" class="block w-6 h-6" />
               </a>
               <a
                 href="https://opentelemetry.io/"
                 target="_blank"
                 aria-label="OpenTelemetry"
+                class="w-8 h-8 inline-flex items-center justify-center"
               >
-                <Icon
-                  name="logos/opentelemetry"
-                  size={25}
-                  class="inline-block"
-                />
+                <Icon name="logos/opentelemetry" class="block w-6 h-6" />
               </a>
               <a
                 href="https://clickhouse.com/"
                 target="_blank"
                 aria-label="ClickHouse"
+                class="w-8 h-8 inline-flex items-center justify-center"
               >
-                <Icon name="logos/clickhouse" size={25} class="inline-block" />
-              </a>
-              <a
-                href="https://containerd.io/"
-                target="_blank"
-                aria-label="Containerd"
-              >
-                <Icon name="logos/containerd" size={25} class="inline-block" />
+                <Icon name="logos/clickhouse" class="block w-6 h-6" />
               </a>
             </div>
           </li>
