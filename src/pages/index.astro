@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import { Icon } from "astro-icon/components";
 import SEO from "../components/SEO.astro";
 const { title, description } = Astro.props;
 ---
@@ -19,183 +18,57 @@ const { title, description } = Astro.props;
   <body
     class="bg-[#102A43] text-[#EAF4FF] min-h-screen flex items-center justify-center"
   >
-    <div class="max-w-2xl mx-auto pt-5 sm:pt-15 p-10 flex flex-col">
-      <p class="text-3xl sm:text-6xl pb-2">mustaeen ahmed</p>
+    <div class="w-full max-w-2xl mx-auto pt-5 sm:pt-15 p-10 flex flex-col gap-5 text-left">
+      <h1 class="text-5xl">hi, i'm mustaeen.</h1>
       <div>
-        <p class="text-md sm:text-lg font-semibold">current</p>
-        <ul class="text-sm sm:text-lg pl-5 pb-5 list-disc">
-          <li>working at <b>?</b></li>
-          <li>
-            <div class="flex flex-wrap items-center gap-y-1 sm:gap-x-1">
-              <span class="shrink-0 whitespace-nowrap mr-1"
-                >contributing to</span
-              >
-
-              <a
-                href="https://prometheus.io/"
-                target="_blank"
-                aria-label="Prometheus"
-                class="w-8 h-8 inline-flex items-center justify-center"
-                title="Prometheus"
-              >
-                <Icon name="logos/prometheus" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-              </a>
-              <a
-                href="https://opentelemetry.io/"
-                target="_blank"
-                aria-label="OpenTelemetry"
-                class="w-8 h-8 inline-flex items-center justify-center"
-                title="OpenTelemetry"
-              >
-                <Icon name="logos/opentelemetry" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-              </a>
-              <a
-                href="https://clickhouse.com/"
-                target="_blank"
-                aria-label="ClickHouse"
-                class="w-8 h-8 inline-flex items-center justify-center"
-                title="ClickHouse"
-              >
-                <Icon name="logos/clickhouse" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-              </a>
-            </div>
+        <h2 class="font-bold">about me:</h1>
+        <ul class="ml-5">
+          <li>cs @ 
+            <a href="https://www.ucf.edu/" rel="noopener noreferrer" target="_blank">ucf</a>
           </li>
+          <li>always welcoming the chance to work on new problems!</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-bold">places i've worked:</h1>
+        <ul class="ml-5">
           <li>
-            <div class="inline-flex items-center gap-1">
-              studying at
-              <a href="https://www.ucf.edu/" target="_blank" aria-label="UCF">
-                <Icon
-                  name="logos/ucf"
-                  class="w-8 h-8 inline-flex items-center justify-center text-black"
-                  title="UCF"
-                />
-              </a>
-            </div>
+            <a href="https://www.cloudflare.com/" rel="noopener noreferrer" target="_blank">cloudflare</a>, 
+            <a href="https://www.primevideo.com/" rel="noopener noreferrer" target="_blank">amazon prime video</a>, 
+            <a href="https://www.twilio.com" rel="noopener noreferrer" target="_blank">twilio</a>, 
+            <a href="https://clickhouse.com/" rel="noopener noreferrer" target="_blank">clickhouse</a>, 
+            <a href="https://joinhandshake.com/" rel="noopener noreferrer" target="_blank">handshake</a>, 
+            <a href="https://www.morganstanley.com/" rel="noopener noreferrer" target="_blank">morgan stanley</a>, 
+            <a href="https://www.pwc.com" rel="noopener noreferrer" target="_blank">pwc</a>, 
+            <a href="https://www.leidos.com/" rel="noopener noreferrer" target="_blank">leidos</a>, 
+            <a href="https://simplify.jobs/" rel="noopener noreferrer" target="_blank">simplify</a>, 
+            <a href="https://www.ornl.gov/" rel="noopener noreferrer" target="_blank">ornl</a>, 
+            <a href="https://www.cae.com/" rel="noopener noreferrer" target="_blank">cae</a>, 
+            <a href="https://www.darden.com/" rel="noopener noreferrer" target="_blank">darden</a>, 
+            <a href="https://ideaflow.io/" rel="noopener noreferrer" target="_blank">ideaflow</a>, 
+            <a href="https://www.transportation.gov/" rel="noopener noreferrer" target="_blank">usdot</a>, 
+            <a href="https://redcanyonsoftware.com/" rel="noopener noreferrer" target="_blank">red canyon</a>, 
+            <a href="https://www.nih.gov/" rel="noopener noreferrer" target="_blank">nih</a>, 
+            <a href="https://www.nsf.gov/" rel="noopener noreferrer" target="_blank">nsf</a>, 
+            <a href="https://creol.ucf.edu/" rel="noopener noreferrer" target="_blank">creol</a>, 
+            <a href="https://www.netc.navy.mil/" rel="noopener noreferrer" target="_blank">netc</a>, 
+            <a href="https://www.ist.ucf.edu/" rel="noopener noreferrer" target="_blank">ucf ist</a>, 
+            <a href="https://www.ocps.net/" rel="noopener noreferrer" target="_blank">ocps</a>, 
+            <a href="https://www.orangetechcollege.net/" rel="noopener noreferrer" target="_blank">otc</a>, 
+            <a href="https://club.knighthacks.org/" rel="noopener noreferrer" target="_blank">knight hacks</a>, 
+            <a href="https://ucf.acm.org/" rel="noopener noreferrer" target="_blank">acm@ucf</a>
           </li>
         </ul>
       </div>
-      <p class="text-md sm:text-lg font-semibold">previous</p>
-      <ul class="text-sm sm:text-lg pl-5 pb-5 list-disc">
-        <li>
-          <div class="inline-flex flex-wrap items-center sm:gap-x-1">
-            <a
-              href="https://www.cloudflare.com/"
-              target="_blank"
-              aria-label="Cloudflare"
-              class="w-8 h-8 inline-flex items-center justify-center"
-              title="Cloudflare"
-            >
-              <Icon name="logos/cloudflare" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-            </a>
-            <a
-              href="https://joinhandshake.com/"
-              target="_blank"
-              aria-label="Handshake"
-              class="w-8 h-8 inline-flex items-center justify-center"
-              title="Handshake"
-            >
-              <Icon name="logos/handshake" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-            </a>
-            <a
-              href="https://www.morganstanley.com/"
-              target="_blank"
-              aria-label="Morgan Stanley"
-              class="w-8 h-8 inline-flex items-center justify-center"
-              title="Morgan Stanley"
-            >
-              <Icon name="logos/morganstanley" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-            </a>
-            <a
-              href="https://8vc.com/"
-              target="_blank"
-              aria-label="Ideaflow (8VC)"
-              class="w-8 h-8 inline-flex items-center justify-center"
-              title="8VC"
-            >
-              <Icon name="logos/8vc" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-            </a>
-            <a
-              href="https://www.leidos.com/"
-              target="_blank"
-              aria-label="Leidos"
-              class="w-8 h-8 inline-flex items-center justify-center"
-              title="Leidos"
-            >
-              <Icon name="logos/leidos" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-            </a>
-            <a
-              href="https://www.cae.com/"
-              target="_blank"
-              aria-label="CAE"
-              class="w-8 h-8 inline-flex items-center justify-center"
-              title="CAE"
-            >
-              <Icon name="logos/cae" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-            </a>
-            <a
-              href="https://www.darden.com/"
-              target="_blank"
-              aria-label="Darden"
-              class="w-8 h-8 inline-flex items-center justify-center"
-              title="Darden"
-            >
-              <Icon name="logos/darden" class="block w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]" />
-            </a>
-          </div>
-        </li>
-        <li>... among others!</li>
-      </ul>
       <div>
-        <div class="text-sm text-[#EAF4FF] flex flex-row gap-4 pb-5">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            class="hover:text-[#A7DBFF] inline-flex items-center justify-center"
-          >
-            <Icon
-              name="logos/resume"
-              class="w-6 h-6 inline-flex items-center justify-center block"
-              aria-label="Resume"
-              title="Resume"
-            />
-          </a>
-          <a
-            href="https://github.com/must108"
-            target="_blank"
-            class="hover:text-[#A7DBFF] inline-flex items-center justify-center"
-          >
-            <Icon
-              name="logos/github_dark"
-              class="w-6 h-6 inline-flex items-center justify-center block"
-              aria-label="GitHub"
-              title="GitHub"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/mustaeenahmed/"
-            target="_blank"
-            class="hover:text-[#A7DBFF] inline-flex items-center justify-center"
-          >
-            <Icon
-              name="logos/linkedin"
-              class="w-6 h-6 inline-flex items-center justify-center block"
-              aria-label="LinkedIn"
-              title="LinkedIn"
-            />
-          </a>
-          <a
-            href="mailto:contact@mustaeen.dev"
-            target="_blank"
-            class="hover:text-[#A7DBFF] inline-flex items-center justify-center"
-          >
-            <Icon
-              name="logos/mail"
-              class="w-[30px] h-[30px] inline-flex items-center justify-center block"
-              aria-label="Email"
-              title="Email"
-            />
-          </a>
-        </div>
+        <h2 class="font-bold">links:</h1>
+          <ul class="ml-5">
+            <li>
+              <a href="https://github.com/must108" rel="noopener noreferrer" target="_blank">github</a>, 
+              <a href="https://www.linkedin.com/in/mustaeenahmed/" rel="noopener noreferrer" target="_blank">linkedin</a>, 
+              <a href="mailto:contact@mustaeen.dev">email</a>
+            </li>
+          </ul>
       </div>
     </div>
   </body>
